@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#e8e3dc" />
+  <meta name="description" content="Sebuah mawar, ucapan ulang tahun, dan terima kasih yang tulus untuk Syahrani Akhyar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Untuk Syahrani Akhyar — A Little Universe" />
+  <meta property="og:description" content="Untuk pertemuan yang singkat, dan hal-hal baik yang tetap pantas disyukuri." />
+  <title>Untuk Syahrani Akhyar — A Little Universe</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%232b2c30'/%3E%3Ctext x='50' y='67' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='64' fill='%23f0ece6'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="intro-locked">
+  <!-- A rose before the story. Clicking it blooms the flower, releases petals, and unveils the letter. -->
+  <div class="rose-intro" id="rose-intro" role="dialog" aria-modal="true" aria-labelledby="rose-intro-title" aria-describedby="rose-intro-description">
+    <div class="intro-fine-line intro-line-left" aria-hidden="true"></div>
+    <div class="intro-fine-line intro-line-right" aria-hidden="true"></div>
+    <div class="intro-topline"><span>A LITTLE SOMETHING FOR YOU</span><span>✳ &nbsp; ONE SPECIAL DAY</span></div>
+    <button class="intro-skip" id="intro-skip" type="button">LEWATI INTRO <span aria-hidden="true">↗</span></button>
+    <div class="intro-content">
+      <p class="intro-overline">A FLOWER, BEFORE ANY WORDS</p>
+      <h2 id="rose-intro-title">Ada sesuatu<br /><em>untukmu, Syahrani.</em></h2>
+      <p class="intro-copy" id="rose-intro-description">Bukan tentang memulai kembali.<br />Hanya sedikit terima kasih, dan doa yang baik.</p>
+      <button class="intro-rose-button" id="intro-rose-button" type="button" aria-label="Sentuh mawar untuk melihat pesan ulang tahun" aria-describedby="intro-hint">
+        <span class="intro-rose-halo" aria-hidden="true"></span>
+        <span class="intro-rose-outer" aria-hidden="true"></span>
+        <svg class="intro-rose-svg" viewBox="0 0 300 370" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="introPetal" x1="30" y1="20" x2="165" y2="190" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ded2c5"/><stop offset=".52" stop-color="#b3a49b"/><stop offset="1" stop-color="#776d69"/>
+            </linearGradient>
+            <linearGradient id="introPetalLight" x1="55" y1="15" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#e7dbcc"/><stop offset=".8" stop-color="#a99a90"/><stop offset="1" stop-color="#887b76"/>
+            </linearGradient>
+          </defs>
+          <g class="rose-stem" stroke="#a49b91" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M152 181C156 225 146 276 151 349"/>
+            <path d="M150 275C125 267 109 253 92 231C121 232 140 242 152 263Z" fill="#656963" stroke="#b8b5a9" stroke-width="1.3" />
+            <path d="M153 306C176 282 191 270 214 261C204 287 184 304 153 320Z" fill="#74766d" stroke="#c5bdad" stroke-width="1.3"/>
+          </g>
+          <g class="rose-bloom">
+            <path class="rose-petal petal-back-left" d="M150 188C100 184 70 164 70 126C67 104 81 88 101 87C101 57 129 49 148 70C137 100 130 142 150 188Z" fill="url(#introPetal)" stroke="#dfd3c5" stroke-width="1.2" />
+            <path class="rose-petal petal-back-right" d="M152 190C191 183 229 159 226 123C224 104 209 91 191 91C195 65 171 49 149 72C166 110 166 154 152 190Z" fill="url(#introPetalLight)" stroke="#dfd3c5" stroke-width="1.2"/>
+            <path class="rose-petal petal-middle-left" d="M150 197C117 180 101 158 103 130C105 106 127 91 147 92C142 119 148 155 150 197Z" fill="#c6b6aa" stroke="#e5d9cb" stroke-width="1.4"/>
+            <path class="rose-petal petal-middle-right" d="M151 196C182 181 199 157 199 135C197 108 177 93 151 94C159 123 153 163 151 196Z" fill="#b5a398" stroke="#e5d9cb" stroke-width="1.4"/>
+            <path class="rose-petal petal-front-left" d="M150 202C117 196 96 181 90 163C119 167 137 150 147 130C151 158 147 183 150 202Z" fill="#dfd0c1" stroke="#eee1d2" stroke-width="1.4"/>
+            <path class="rose-petal petal-front-right" d="M152 203C187 192 210 178 216 158C186 164 165 149 154 126C151 157 154 178 152 203Z" fill="#c8b6a8" stroke="#e9dbcc" stroke-width="1.4"/>
+            <path class="rose-petal petal-center" d="M150 171C130 143 130 112 149 102C169 112 174 139 150 171Z" fill="#eadccf" stroke="#f1e4d5" stroke-width="1.3"/>
+            <path d="M149 103C142 123 145 141 153 151" stroke="#a4958b" stroke-width="1.25" stroke-linecap="round" />
+            <path d="M136 199L151 212L168 198" stroke="#b7b9a7" stroke-width="1.6" stroke-linecap="round" />
+          </g>
+        </svg>
+        <span class="intro-rose-shimmer" aria-hidden="true">✧</span>
+      </button>
+      <p class="intro-hint" id="intro-hint"><span class="intro-hint-dot">✳</span> SENTUH MAWARNYA UNTUK MEMBUKA <span class="intro-hint-dot">✳</span></p>
+      <p class="intro-transition-words" aria-hidden="true">Some things are beautiful<br />even when they're brief. <span>♡</span></p>
+    </div>
+    <p class="intro-bottomnote">MADE WITH GRATITUDE · FOR SYAHRANI AKHYAR</p>
+    <span class="intro-page-index" aria-hidden="true">00 / 05</span>
+    <div class="petal-field" id="petal-field" aria-hidden="true"></div>
+  </div>
+
+  <div class="site-grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Kembali ke awal halaman">
+      <span class="brand-mark">s<span class="brand-slash">/</span>a<span class="brand-dot">.</span></span>
+      <span class="brand-label">A LITTLE UNIVERSE<br />MADE WITH GRATITUDE</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a href="#letter">Sebuah surat</a>
+      <a href="#little-things">Hal kecil</a>
+      <a href="#wishes">Harapan</a>
+    </nav>
+    <button class="music-toggle" type="button" aria-label="Nyalakan musik lembut" aria-pressed="false" title="Nyalakan / matikan musik lembut">
+      <span class="music-waves" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="music-label">SOUND OFF</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-light-line" aria-hidden="true"></div>
+      <div class="hero-orbit-ghost" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow rise-in"><span class="tiny-sparkle">✳</span> A SMALL WISH, FOR A WONDERFUL SOUL</div>
+        <p class="hero-intro rise-in">Untuk seseorang yang pernah hadir,</p>
+        <h1 class="hero-title rise-in" id="hero-title" tabindex="-1">Selamat<br /><em>ulang tahun,</em><br /><span>Syahrani.</span></h1>
+        <div class="hero-subline rise-in"><span class="subline-rule"></span><span>AKHYAR · A LITTLE NOTE FOR YOU</span></div>
+        <p class="hero-description rise-in">Tidak perlu ada cerita baru. Hari ini, aku hanya ingin mengucapkan terima kasih dan selamat ulang tahun.</p>
+        <a class="round-link rise-in" href="#letter"><span class="round-link-icon" aria-hidden="true">↗</span><span>Baca pesan kecil ini</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-meta art-meta-top">DEAR SYAHRANI <span>✧</span> HAPPY BIRTHDAY</div>
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-inner"></div>
+        <div class="orbit-label orbit-label-one">YOU ARE <em>enough</em></div>
+        <div class="orbit-label orbit-label-two">THANK YOU ♡</div>
+        <div class="art-bloom">
+          <svg class="rose-drawing" viewBox="0 0 390 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M189 422 C201 365 204 310 199 254" />
+              <path d="M196 374 C158 360 130 344 116 312 C148 314 171 333 196 355" />
+              <path d="M199 339 C233 313 253 288 260 252 C231 266 214 288 199 313" />
+              <path d="M116 312 C145 343 168 345 193 357 M260 252 C243 291 224 306 200 328" />
+              <path d="M195 257 C171 244 145 229 140 199 C137 179 152 157 172 149 C151 133 151 103 168 87 C183 71 206 72 219 86 C239 80 261 94 262 115 C283 127 287 157 273 174 C276 196 265 216 244 230 C225 247 211 255 195 257Z" />
+              <path d="M173 149 C155 174 174 202 197 213 C215 202 225 186 227 166 C234 146 223 126 206 120 C180 113 160 128 173 149Z" />
+              <path d="M172 149 C188 148 210 157 216 172 C220 185 204 200 197 213" />
+              <path d="M206 120 C194 135 196 154 206 164 C219 155 236 142 242 121" />
+              <path d="M169 88 C171 110 182 119 206 120 M219 86 C223 102 218 114 206 120" />
+              <path d="M263 116 C253 133 248 153 227 166 M273 174 C253 185 228 194 213 209" />
+              <path d="M140 199 C162 215 177 222 197 213 M244 230 C232 222 219 217 207 218" />
+              <path d="M165 230 C170 255 179 272 198 279 C220 265 231 251 235 235" opacity=".7" />
+              <path d="M154 360 C143 373 134 390 137 404 C155 404 175 392 184 380" opacity=".65" />
+              <path d="M215 354 C229 358 245 369 255 386 C232 392 213 384 201 375" opacity=".65" />
+              <path d="M186 422 C194 424 202 424 209 421" />
+            </g>
+            <g fill="currentColor" opacity=".8"><circle cx="137" cy="105" r="2"/><circle cx="292" cy="217" r="2"/><circle cx="102" cy="268" r="2"/></g>
+          </svg>
+        </div>
+        <span class="hero-float-heart heart-one">♡</span>
+        <span class="hero-float-heart heart-two">✧</span>
+        <span class="hero-float-heart heart-three">✳</span>
+        <div class="art-bottom-note">A FLOWER, A THANK YOU,<br />AND A GENTLE WISH.</div>
+      </div>
+      <a class="hero-scroll-cue" href="#letter"><span>SCROLL TO FEEL</span><span class="scroll-arrow">↓</span></a>
+      <span class="hero-page-mark" aria-hidden="true">01 / 05</span>
+    </section>
+
+    <div class="marquee-band" aria-label="You matter, you are enough, may you always bloom">
+      <div class="marquee-track" aria-hidden="true">
+        <span>YOU MATTER <b>✧</b> THANK YOU FOR THE MOMENT <b>✳</b> MAY YOU ALWAYS BLOOM <b>♡</b></span>
+        <span>YOU MATTER <b>✧</b> THANK YOU FOR THE MOMENT <b>✳</b> MAY YOU ALWAYS BLOOM <b>♡</b></span>
+      </div>
+    </div>
+
+    <section class="letter-section section-dark" id="letter" aria-labelledby="letter-title">
+      <div class="section-container letter-layout">
+        <div class="letter-copy reveal">
+          <div class="section-kicker"><span class="section-index">01</span><span class="kicker-rule"></span> A LITTLE THANK-YOU NOTE</div>
+          <h2 id="letter-title">Untuk sesuatu yang<br />pernah ada, <em>terima kasih.</em></h2>
+          <p>Tidak semua pertemuan harus menjadi cerita yang panjang agar tetap layak dikenang dengan baik. Ada hal-hal kecil yang ingin kusampaikan, tanpa mengharap apa-apa.</p>
+          <div class="handwritten">Just a simple thank you, from the heart. <span>♡</span></div>
+          <span class="letter-sparkle" aria-hidden="true">✧</span>
+        </div>
+        <div class="letter-card-wrap reveal">
+          <div class="paper-clip" aria-hidden="true"></div>
+          <article class="letter-card">
+            <div class="card-topline"><span>A SIMPLE LETTER</span><span>№ 001</span></div>
+            <span class="card-deco-star" aria-hidden="true">✳</span>
+            <p class="letter-salutation">Dear, Syahrani Akhyar</p>
+            <p>Syahrani, selamat ulang tahun. Aku ingin berterima kasih karena kita sempat saling mengenal, meskipun cerita itu tidak berjalan seperti yang mungkin pernah kita bayangkan.</p>
+            <p>Terima kasih untuk waktu, percakapan, dan hal-hal sederhana yang sempat kita bagi. Aku memilih mengingatnya sebagai bagian yang baik, tanpa menyalahkan siapa pun.</p>
+            <p class="letter-bold">Di hari ulang tahunmu, semoga kamu menemukan kebahagiaan yang tenang, orang-orang yang tulus, dan banyak alasan untuk tersenyum. Tidak ada yang perlu kamu balas dari pesan ini.</p>
+            <div class="letter-secret" id="letter-secret" aria-hidden="true">
+              <div class="secret-divider">✦ &nbsp; ONE LAST THOUGHT &nbsp; ✦</div>
+              <p>Terima kasih sudah pernah hadir, walau hanya sebentar. Aku menghargai pertemuan itu, dan aku sungguh berharap hal-hal baik selalu datang kepadamu.</p>
+              <span>Be happy, in your own way. ♡</span>
+            </div>
+            <div class="letter-card-bottom">
+              <span>WITH SINCERITY, <span class="signature">seseorang yang berterima kasih</span></span>
+              <button class="seal-button" type="button" aria-expanded="false" aria-controls="letter-secret"><span>♡</span><span class="seal-label">Buka pesan terakhir</span></button>
+            </div>
+          </article>
+          <div class="letter-card-shadow" aria-hidden="true"></div>
+        </div>
+      </div>
+      <span class="dark-decoration deco-left" aria-hidden="true">✳</span>
+      <span class="dark-decoration deco-right" aria-hidden="true">✧</span>
+    </section>
+
+    <section class="little-section" id="little-things" aria-labelledby="little-title">
+      <div class="section-container">
+        <div class="little-header reveal">
+          <div><div class="section-kicker light-kicker"><span class="section-index">02</span><span class="kicker-rule"></span> THE LITTLE THINGS</div>
+          <h2 id="little-title">Hal kecil yang<br /><em>layak disyukuri.</em></h2></div>
+          <p>Mungkin singkat, tetapi tidak berarti tanpa makna. Ini hal-hal baik yang kupilih untuk dikenang.</p>
+        </div>
+        <div class="little-grid">
+          <article class="little-card reveal" tabindex="0">
+            <div class="little-card-top"><span>01 / YOUR SMILE</span><span>↗</span></div>
+            <div class="little-illustration illustration-smile" aria-hidden="true"><svg viewBox="0 0 170 150"><path d="M38 65C41 26 73 12 99 23c27 11 38 48 25 76-13 29-53 42-78 17C31 101 31 80 38 65Z"/><path d="M55 75c19 20 43 23 63-4"/><path d="M60 57h.1M101 53h.1" stroke-width="5" stroke-linecap="round"/><path d="m132 21 5-12 5 12 12 5-12 5-5 12-5-12-12-5Z"/></svg></div>
+            <h3>Tawamu.</h3><p>Semoga selalu ada banyak hal yang membuatmu tertawa tanpa beban.</p>
+            <span class="card-footer">A SMALL JOY <span>✧</span></span>
+          </article>
+          <article class="little-card reveal" tabindex="0">
+            <div class="little-card-top"><span>02 / YOUR PRESENCE</span><span>↗</span></div>
+            <div class="little-illustration illustration-heart" aria-hidden="true"><svg viewBox="0 0 170 150"><path d="M85 120 30 70C-1 40 46-1 83 37c38-38 86 3 55 33l-53 50Z"/><path d="m85 53 4 10 11 4-11 4-4 10-4-10-11-4 11-4 4-10Z"/><path d="M27 111c8 9 16 13 26 16M116 17c10 3 18 7 24 17"/></svg></div>
+            <h3>Hadirmu.</h3><p>Terima kasih pernah meluangkan waktu, walau tidak lama. Itu cukup untuk menjadi kenangan baik.</p>
+            <span class="card-footer">A KIND MEMORY <span>♡</span></span>
+          </article>
+          <article class="little-card reveal" tabindex="0">
+            <div class="little-card-top"><span>03 / YOUR DREAMS</span><span>↗</span></div>
+            <div class="little-illustration illustration-stars" aria-hidden="true"><svg viewBox="0 0 170 150"><path d="m85 18 12 33 34 12-34 12-12 35-12-35-34-12 34-12 12-33ZM134 16l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12ZM35 103l6 14 14 5-14 6-6 13-5-13-14-6 14-5 5-14Z"/></svg></div>
+            <h3>Mimpimu.</h3><p>Semoga semua rencanamu berjalan indah, satu per satu, pada waktu yang tepat.</p>
+            <span class="card-footer">ENDLESS POSSIBILITIES <span>✳</span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wishes-section" id="wishes" aria-labelledby="wishes-title">
+      <div class="section-container wish-heading reveal">
+        <div class="section-kicker light-kicker"><span class="section-index">03</span><span class="kicker-rule"></span> WISH UPON A STAR</div>
+        <h2 id="wishes-title">Kalau doa bisa<br />menjadi <em>bintang...</em></h2>
+        <p>...inilah lima doa kecil untukmu. Sentuh bintang-bintang ini satu per satu dan temukan harapannya.</p>
+      </div>
+      <div class="wish-stage reveal" aria-label="Lima bintang berisi harapan untuk Syahrani">
+        <div class="wish-orbit wish-orbit-one" aria-hidden="true"></div>
+        <div class="wish-orbit wish-orbit-two" aria-hidden="true"></div>
+        <div class="wish-stage-glimmer glimmer-a" aria-hidden="true">✧</div>
+        <div class="wish-stage-glimmer glimmer-b" aria-hidden="true">·</div>
+        <div class="wish-stage-glimmer glimmer-c" aria-hidden="true">✳</div>
+        <button class="wish-star star-one" type="button" data-wish="Semoga hatimu selalu punya tempat untuk pulang, seberat apa pun harinya." aria-label="Buka harapan pertama">✦</button>
+        <button class="wish-star star-two" type="button" data-wish="Semoga semua mimpi yang kamu rawat pelan-pelan menemukan jalannya menjadi nyata." aria-label="Buka harapan kedua">✧</button>
+        <button class="wish-star star-three" type="button" data-wish="Semoga kamu dikelilingi orang-orang yang menyayangimu setulus yang pantas kamu terima." aria-label="Buka harapan ketiga">✳</button>
+        <button class="wish-star star-four" type="button" data-wish="Semoga bahagiamu tidak pernah terasa perlu disembunyikan atau dikecilkan." aria-label="Buka harapan keempat">✦</button>
+        <button class="wish-star star-five" type="button" data-wish="Semoga apa pun yang menantimu, kamu tidak pernah kehilangan dirimu yang begitu indah." aria-label="Buka harapan kelima">✧</button>
+        <div class="wish-center" aria-live="polite">
+          <span class="wish-heart">♡</span>
+          <span class="wish-center-label">ONE WISH, JUST FOR YOU</span>
+          <p id="wish-message">Di antara banyak doa, ada satu yang tak berubah: semoga hidup selalu memperlakukanmu dengan lembut.</p>
+          <span class="wish-instruction">KLIK SALAH SATU BINTANG <span>↗</span></span>
+        </div>
+      </div>
+      <div class="wish-counter" aria-live="polite"><span id="wishes-discovered">0</span> / 5 HARAPAN DITEMUKAN</div>
+    </section>
+
+    <section class="celebrate-section section-dark" id="celebrate" aria-labelledby="celebrate-title">
+      <div class="section-container celebrate-layout">
+        <div class="celebrate-copy reveal">
+          <div class="section-kicker"><span class="section-index">04</span><span class="kicker-rule"></span> MAKE A LITTLE WISH</div>
+          <h2 id="celebrate-title">Sekarang,<br />buat satu <em>harapan.</em></h2>
+          <p>Pejamkan mata sebentar. Pikirkan hal yang paling ingin kamu wujudkan. Kalau sudah, tiup lilinnya. Biar semesta ikut mengaminkan.</p>
+          <button id="blow-candles" class="celebrate-button" type="button"><span class="celebrate-button-symbol">✳</span><span class="celebrate-button-label">Tiup lilinnya</span><span aria-hidden="true">↗</span></button>
+          <p class="celebrate-response" id="celebrate-response" aria-live="polite">Your wish is safe with the universe. ♡</p>
+        </div>
+        <div class="cake-scene reveal" aria-label="Ilustrasi kue ulang tahun dengan tiga lilin interaktif">
+          <div class="cake-halo"></div>
+          <span class="cake-star cake-star-one" aria-hidden="true">✧</span><span class="cake-star cake-star-two" aria-hidden="true">✳</span><span class="cake-star cake-star-three" aria-hidden="true">⋆</span>
+          <div class="cake-illustration" id="cake-illustration" aria-hidden="true">
+            <div class="candles">
+              <div class="candle"><div class="flame"></div><div class="wick"></div><div class="candle-stick"></div></div>
+              <div class="candle candle-middle"><div class="flame"></div><div class="wick"></div><div class="candle-stick"></div></div>
+              <div class="candle"><div class="flame"></div><div class="wick"></div><div class="candle-stick"></div></div>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-icing"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="cake-body"><div class="cake-decoration">♡</div><div class="cake-ribbon"></div></div>
+            <div class="cake-plate"></div><div class="cake-plate-foot"></div>
+          </div>
+          <span class="cake-caption">A LITTLE CAKE, A LOT OF GOOD WISHES.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending-section" id="ending" aria-labelledby="ending-title">
+      <div class="ending-ornament reveal" aria-hidden="true">✳</div>
+      <div class="ending-inner reveal">
+        <div class="section-kicker light-kicker end-kicker">05 <span class="kicker-rule"></span> AND ONE LAST THING</div>
+        <p class="ending-lead">Setelah semua yang berlalu,</p>
+        <h2 id="ending-title">semoga bab berikutmu<br /><em>semakin indah.</em></h2>
+        <p class="ending-body">Selamat ulang tahun, Syahrani Akhyar. Terima kasih karena kita pernah bertemu. Semoga langkahmu ke depan lebih ringan, hatimu lebih tenang, dan hidupmu dipenuhi hal-hal yang baik. Tidak ada harapan lain di balik pesan ini—hanya doa yang tulus.</p>
+        <div class="ending-heart" aria-hidden="true">♡</div>
+        <p class="ending-signoff">With gratitude, and nothing to ask for.</p>
+      </div>
+      <footer class="site-footer"><span>MADE WITH <span aria-hidden="true">♡</span> & GRATITUDE FOR SYAHRANI AKHYAR</span><a href="#top" aria-label="Kembali ke atas halaman">BACK TO THE STARS ↑</a><span>WISHING YOU ALL THE BEST · ✧</span></footer>
+    </section>
+  </main>
+  <div class="floating-hearts" id="floating-hearts" aria-hidden="true"></div>
+</body>
+</html>
