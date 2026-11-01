@@ -1,4 +1,4 @@
-# Untuk Syahrani Akhyar — A Little Universe
+# Untuk UlangTahun — A Little Universe
 
 Website ulang tahun interaktif dengan rose-opening animation, 34 petals, gratitude-first letter, wishes, birthday cake and optional Web Audio melody.
 
