@@ -11,7 +11,7 @@ Website ulang tahun interaktif dengan rose-opening animation, 34 petals, gratitu
 Link sandbox/local atau file:/// **bukan link publik**. Untuk link yang dapat dibuka dari HP orang lain, unggah ke hosting.
 
 ## Jalankan lokal
-- Klik `untuk-syahrani-akhyar.html` untuk file tunggal standalone.
+- Klik `happy-birthday.html` untuk file tunggal standalone.
 - Atau jalankan index.html di folder ini lewat Live Server / `python -m http.server 8000`.
 
 ## Ubah konten
